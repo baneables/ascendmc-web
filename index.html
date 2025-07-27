@@ -1,0 +1,61 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AscendMC | Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://media.discordapp.net/attachments/1384714963716931634/1398035172087173150/Nuevo.png?ex=6883e537&is=688293b7&hm=853f003263f25747cbb7ab2e97c87dc1aeaaf1eb7142f10cafc9690573f6af00&=&format=webp&quality=lossless&width=960&height=960">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/ikloKP5zfxOIavigFLso6IA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="background-video.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+    <div class="overlay"></div>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="modalidades.html" class="nav-link">Modalidades</a>
+            <a href="reglas.html" class="nav-link">Reglas</a>
+            <a href="ayuda.html" class="nav-link">Ayuda</a>
+            <a href="informacion.html" class="nav-link">Información</a>
+            <a href="anuncios.html" class="nav-link">Anuncios</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <img src="https://media.discordapp.net/attachments/1384714963716931634/1398035172087173150/Nuevo.png?ex=6883e537&is=688293b7&hm=853f003263f25747cbb7ab2e97c87dc1aeaaf1eb7142f10cafc9690573f6af00&=&format=webp&quality=lossless&width=960&height=960" alt="Logo de AscendMC" class="logo">
+        <h1>Bienvenido a AscendMC</h1>
+        <p class="server-status">
+            Hay <span id="player-count">...</span> jugadores en línea en
+        </p>
+        <div class="ip-container">
+            <span id="ip-address">ascendmc.xyz</span>
+            <button id="copy-ip-btn" title="Copiar IP">
+                <i class="fa-regular fa-copy"></i>
+            </button>
+        </div>
+        <div id="copy-feedback">¡IP Copiada!</div>
+
+        <section id="announcements-section" class="announcements-container">
+             <h2><i class="fa-solid fa-bullhorn"></i> Últimos Anuncios</h2>
+             <div id="announcements-list">
+                 <!-- Los anuncios se cargarán aquí dinámicamente -->
+             </div>
+         </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>&copy; 2024 AscendMC. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

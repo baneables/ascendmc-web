@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AscendMC | Anuncios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://media.discordapp.net/attachments/1384714963716931634/1398035172087173150/Nuevo.png?ex=6883e537&is=688293b7&hm=853f003263f25747cbb7ab2e97c87dc1aeaaf1eb7142f10cafc9690573f6af00&=&format=webp&quality=lossless&width=960&height=960">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/ikloKP5zfxOIavigFLso6IA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="background-video.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="modalidades.html" class="nav-link">Modalidades</a>
+            <a href="reglas.html" class="nav-link">Reglas</a>
+            <a href="ayuda.html" class="nav-link">Ayuda</a>
+            <a href="informacion.html" class="nav-link">Información</a>
+            <a href="anuncios.html" class="nav-link active">Anuncios</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-content">
+            <h1>Anuncios</h1>
+            <p>Aquí puedes ver todos los anuncios del servidor. Para publicar un anuncio, debes iniciar sesión.</p>
+            
+            <section id="announcements-section" class="announcements-container" style="background: none; padding: 0; margin-top: 2rem;">
+                 <div id="announcements-list">
+                     <!-- Los anuncios se cargarán aquí -->
+                 </div>
+            </section>
+
+            <form id="login-form" class="login-form">
+                <h2>Acceso de Administrador</h2>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="form-btn">Iniciar Sesión</button>
+                <p id="error-message">Correo o contraseña incorrectos.</p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>&copy; 2024 AscendMC. Todos los derechos reservados.</p>
+    </footer>
+    <script src="main.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
+

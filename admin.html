@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AscendMC | Panel de Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://media.discordapp.net/attachments/1384714963716931634/1398035172087173150/Nuevo.png?ex=6883e537&is=688293b7&hm=853f003263f25747cbb7ab2e97c87dc1aeaaf1eb7142f10cafc9690573f6af00&=&format=webp&quality=lossless&width=960&height=960">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="background-video.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+
+    <main class="container" id="admin-panel" style="display: none;">
+        <div class="page-content">
+            <h1>Panel de Administración</h1>
+            <p>Crea un nuevo anuncio para todos los jugadores.</p>
+
+            <form id="announcement-form" class="announcement-form">
+                <div class="form-group">
+                    <label for="ann-title">Título del Anuncio:</label>
+                    <input type="text" id="ann-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="ann-content">Contenido:</label>
+                    <textarea id="ann-content" required></textarea>
+                </div>
+                <button type="submit" class="form-btn">Publicar Anuncio</button>
+            </form>
+        </div>
+    </main>
+    
+    <script src="admin.js"></script>
+</body>
+</html>
+
